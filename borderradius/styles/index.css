@@ -109,6 +109,10 @@ main input{
   margin: 0 8px;
 }
 
+main input:focus{
+  background: #77FDB5;
+}
+
 footer{
   display: flex;
   flex-direction: column;
@@ -135,6 +139,8 @@ footer textarea{
   height: 100%;
   min-height: 120px;
   margin-bottom: 8px;
+  padding: 16px;
+  color: #c4c4c4;
 }
 
 footer button{
