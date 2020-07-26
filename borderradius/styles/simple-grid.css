@@ -1,0 +1,39 @@
+main.simple{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "ra main-rounded main-rounded rb" "rd main-rounded main-rounded rc";
+}
+
+
+main.simple .ra {
+  grid-area: ra;
+  display: flex;
+  flex-direction: column;
+}
+
+main.simple .rb {
+  grid-area: rb;
+  display: flex;
+  flex-direction: column;
+}
+
+main.simple .rd {
+  grid-area: rd;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main.simple .rc {
+  grid-area: rc;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main.simple .ra input, main.simple .rd input{
+  align-self: flex-end;
+}
+main.simple .rc input{
+  align-self: flex-start;
+}

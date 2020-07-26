@@ -88,12 +88,6 @@ header div a#active span, header div a:hover span{
 }
 
 main{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "r1 main-rounded main-rounded r2" "r3 main-rounded main-rounded r4";
-
   background-color: #16171B;
   padding: 40px;
   width: 70vw;
@@ -113,37 +107,6 @@ main input{
   padding: 8px;
   width: 80px;
   margin: 0 8px;
-}
-
-.r1 {
-  grid-area: r1;
-  display: flex;
-  flex-direction: column;
-}
-
-.r2 {
-  grid-area: r2;
-  display: flex;
-  flex-direction: column;
-}
-
-.r3 {
-  grid-area: r3;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.r4 {
-  grid-area: r4;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.r1 input, .r3 input{
-  align-self: flex-end;
-}
-.r4 input{
-  align-self: flex-start;
 }
 
 footer{

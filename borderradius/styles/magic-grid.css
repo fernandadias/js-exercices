@@ -1,0 +1,79 @@
+main.magic{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    ". ra rb ."
+    "re main-rounded main-rounded rf"
+    "rh main-rounded main-rounded rg"
+    ". rd rc .";
+}
+
+main.magic .ra {
+  grid-area: ra;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main.magic .rb {
+  grid-area: rb;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main.magic .rc {
+  grid-area: rc;
+  display: flex;
+  flex-direction: column;
+}
+
+main.magic .rd {
+  grid-area: rd;
+}
+
+main.magic .re {
+  grid-area: re;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+main.magic .rf {
+  grid-area: rf;
+}
+
+main.magic .rg {
+  grid-area: rg;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main.magic .rh {
+  grid-area: rh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main.magic .ra input,
+main.magic .rb input,
+main.magic .rc input,
+main.magic .rd input{
+  margin: 8px 0;
+}
+
+main.magic .rh input{
+  align-self: flex-end;
+}
+
+main.magic .rc input{
+  align-self: flex-end;
+}
+
+main.magic .rb input{
+  align-self: flex-end;
+}
+
+main.magic .re input{
+  align-self: flex-end;
+}
