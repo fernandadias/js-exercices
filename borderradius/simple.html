@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Radius Previewer</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/index.css">
+
+<body>
+
+  <header>
+    <h1>Border Radius Previewer</h1>
+    <div>
+      <a href="./simple.html" id="active"><span id="simpleicon"></span>simple radius</a>
+      <a href="./magic.html"><span id="magicicon"></span>magic radius</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-rounded"></div>
+    <div class="r1">
+      <input type="text">
+    </div>
+    <div class="r2">
+      <input type="text">
+    </div>
+    <div class="r3">
+      <input type="text">
+    </div>
+    <div class="r4">
+      <input type="text">
+    </div>
+  </main>
+
+  <footer>
+    <div class="kits">
+      <ul>
+        <li>
+          <input type="checkbox" id="webKit" name="webKit">
+          <label for="webKit">WebKit</label>
+        </li>
+        <li>
+          <input type="checkbox" id="gecko" name="gecko">
+          <label for="gecko">Gecko</label>
+
+        </li>
+        <li>
+          <input type="checkbox" id="css3" name="css3">
+          <label for="css3">CSS3</label>
+        </li>
+      </ul>
+    </div>
+    <textarea name="code" id="code"></textarea>
+    <button>Copy code</button>
+  </footer>
+</body>
+
+</html>
